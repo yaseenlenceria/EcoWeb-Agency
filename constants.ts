@@ -184,7 +184,7 @@ export const PROJECTS: Project[] = [
 export const TEAM: TeamMember[] = [
   {
     id: 'sara',
-    name: 'sara',
+    name: 'Sara',
     roleKey: 'role_client_relations',
     color: 'from-pink-500 to-rose-500'
   },
