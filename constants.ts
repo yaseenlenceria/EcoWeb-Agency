@@ -9,7 +9,7 @@ import {
   Share2, 
   Code2 
 } from 'lucide-react';
-import { ServiceItem, TranslationStructure, Testimonial, NavItem, Project, TeamMember } from './types';
+import { ServiceItem, TranslationStructure, NavItem, TeamMember } from './types';
 
 export const TRANSLATIONS: TranslationStructure = {
   // Navigation
@@ -61,28 +61,6 @@ export const TRANSLATIONS: TranslationStructure = {
   srv_tech_title: { sv: 'Teknisk Optimering', en: 'Technical Optimization' },
   srv_tech_desc: { sv: 'Snabbare laddtider, bättre ranking, nöjdare användare.', en: 'Faster load times, better ranking, happier users.' },
 
-  // Projects
-  projects_eyebrow: { sv: 'Utvalda Projekt', en: 'Selected Work' },
-  projects_title: { sv: 'Företag vi hjälpt växa', en: 'Companies We\'ve Helped Grow' },
-  project_visit: { sv: 'Se resultatet', en: 'View Result' },
-  
-  // Categories (Projects)
-  cat_ecommerce: { sv: 'E-handel & Hälsa', en: 'E-commerce & Health' },
-  cat_retail: { sv: 'Hållbar Detaljhandel', en: 'Sustainable Retail' },
-  cat_eco: { sv: 'Miljömedvetna Val', en: 'Eco-conscious Choices' },
-  cat_lifestyle: { sv: 'Nordisk Livsstil', en: 'Nordic Lifestyle' },
-  cat_marketplace: { sv: 'Grön Marknadsplats', en: 'Green Marketplace' },
-
-  // Stats / Success (SuccessSection)
-  stats_success: { sv: 'Resultat som talar', en: 'Results that speak' },
-  stats_clients: { sv: 'Nöjda kunder', en: 'Happy Clients' },
-  stats_projects: { sv: 'Projekt Levererade', en: 'Projects Delivered' },
-
-  // Testimonials Quotes
-  quote_mattress: { sv: 'Vi såg en omedelbar ökning i organisk trafik och försäljning.', en: 'We saw an immediate increase in organic traffic and sales.' },
-  quote_daylesford: { sv: 'EcoWebAgency hjälpte oss att spegla våra hållbarhetsvärderingar digitalt.', en: 'EcoWebAgency helped us reflect our sustainability values digitally.' },
-  quote_regn: { sv: 'En partner som verkligen förstår modern e-handel och branding.', en: 'A partner that truly understands modern e-commerce and branding.' },
-
   // Team
   team_eyebrow: { sv: 'Människorna', en: 'The Humans' },
   team_title: { sv: 'Vi som gör jobbet', en: 'The People Behind It' },
@@ -123,71 +101,6 @@ export const NAV_ITEMS: NavItem[] = [
   { labelKey: 'nav_work', href: '#work' },
   { labelKey: 'nav_about', href: '#team' },
   { labelKey: 'nav_contact', href: '#contact' },
-];
-
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    id: 1,
-    name: 'James O.',
-    role: 'CEO',
-    company: 'The Mattress Store',
-    quoteKey: 'quote_mattress',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces'
-  },
-  {
-    id: 2,
-    name: 'Sarah M.',
-    role: 'Marketing Dir',
-    company: 'Daylesford',
-    quoteKey: 'quote_daylesford',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=faces'
-  },
-  {
-    id: 3,
-    name: 'Anders K.',
-    role: 'Founder',
-    company: 'REGN',
-    quoteKey: 'quote_regn',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=faces'
-  }
-];
-
-export const PROJECTS: Project[] = [
-  {
-    id: 'mattress-store',
-    title: 'The Mattress Store',
-    categoryKey: 'cat_ecommerce',
-    url: 'https://themattressstore.ie/',
-    image: 'https://picsum.photos/seed/bed/800/600'
-  },
-  {
-    id: 'daylesford',
-    title: 'Daylesford',
-    categoryKey: 'cat_retail',
-    url: 'https://www.daylesford.com/shop/homeware/cleaning',
-    image: 'https://picsum.photos/seed/clean/800/600'
-  },
-  {
-    id: 'green-turtle',
-    title: 'The Green Turtle',
-    categoryKey: 'cat_eco',
-    url: 'https://www.thegreenturtle.co.uk/',
-    image: 'https://picsum.photos/seed/turtle/800/600'
-  },
-  {
-    id: 'regn',
-    title: 'REGN',
-    categoryKey: 'cat_lifestyle',
-    url: 'https://www.regn.co.uk/',
-    image: 'https://picsum.photos/seed/rain/800/600'
-  },
-  {
-    id: 'earth-hero',
-    title: 'Earth Hero',
-    categoryKey: 'cat_marketplace',
-    url: 'https://earthhero.com/?srsltid=AfmBOorV4IMe2_KosWlCLH6SBSD05rKGwEghQ1B6e8ZIUUYZsPsXsVm5',
-    image: 'https://picsum.photos/seed/earth/800/600'
-  }
 ];
 
 export const TEAM: TeamMember[] = [

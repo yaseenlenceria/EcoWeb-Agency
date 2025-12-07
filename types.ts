@@ -9,15 +9,6 @@ export interface ServiceItem {
   icon: LucideIcon;
 }
 
-export interface Testimonial {
-  id: number;
-  name: string;
-  role: string;
-  company: string;
-  quoteKey: string;
-  image: string;
-}
-
 export interface NavItem {
   labelKey: string;
   href: string;
@@ -28,14 +19,6 @@ export interface TranslationStructure {
     sv: string;
     en: string;
   };
-}
-
-export interface Project {
-  id: string;
-  title: string;
-  categoryKey: string;
-  url: string;
-  image: string;
 }
 
 export interface TeamMember {
