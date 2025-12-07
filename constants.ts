@@ -183,8 +183,8 @@ export const PROJECTS: Project[] = [
 
 export const TEAM: TeamMember[] = [
   {
-    id: 'sarah',
-    name: 'Sarah',
+    id: 'sara',
+    name: 'sara',
     roleKey: 'role_client_relations',
     color: 'from-pink-500 to-rose-500'
   },
@@ -195,8 +195,8 @@ export const TEAM: TeamMember[] = [
     color: 'from-blue-500 to-indigo-500'
   },
   {
-    id: 'yasmin',
-    name: 'Yasmin',
+    id: 'yasin',
+    name: 'Yasin Lenceria',
     roleKey: 'role_developer',
     color: 'from-purple-500 to-violet-500'
   },
