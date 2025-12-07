@@ -41,13 +41,13 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#040f0c] text-slate-200 selection:bg-emerald-500/30 selection:text-emerald-200 relative">
       
-      {/* Global Background Ambience - Transferred from Hero for full project consistency */}
+      {/* Global Background Ambience - Restored Original Hero Style */}
       <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
-        {/* Dot Pattern Overlay */}
+        {/* Tech Grid Pattern - Green Dots */}
         <div 
-          className="absolute inset-0 opacity-[0.04] mix-blend-overlay" 
+          className="absolute inset-0 opacity-[0.05]" 
           style={{ 
-            backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)', 
+            backgroundImage: 'radial-gradient(#4ade80 1px, transparent 1px)', 
             backgroundSize: '40px 40px' 
           }} 
         />
@@ -56,20 +56,22 @@ const App: React.FC = () => {
         <motion.div 
           animate={{ 
             scale: [1, 1.1, 1], 
-            opacity: [0.3, 0.5, 0.3],
-            x: [0, 20, 0]
+            opacity: [0.2, 0.4, 0.2],
+            x: [0, 50, 0],
+            y: [0, 30, 0]
           }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-[-10%] right-[-5%] w-[700px] h-[700px] bg-emerald-600/20 rounded-full blur-[120px]" 
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-[-20%] right-[-10%] w-[800px] h-[800px] bg-emerald-600/20 rounded-full blur-[120px]" 
         />
         <motion.div 
           animate={{ 
             scale: [1, 1.2, 1], 
-            opacity: [0.2, 0.4, 0.2],
-            x: [0, -30, 0]
+            opacity: [0.15, 0.3, 0.15],
+            x: [0, -40, 0],
+            y: [0, -40, 0]
           }}
-          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-          className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-teal-800/20 rounded-full blur-[100px]" 
+          transition={{ duration: 18, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+          className="absolute bottom-[-10%] left-[-20%] w-[700px] h-[700px] bg-teal-800/20 rounded-full blur-[100px]" 
         />
       </div>
 
