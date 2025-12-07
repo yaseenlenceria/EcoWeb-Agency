@@ -6,7 +6,6 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Projects from './components/Projects';
 import Team from './components/Team';
-import SuccessSection from './components/SuccessSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -54,7 +53,6 @@ const App: React.FC = () => {
         <Hero t={t} />
         <Services t={t} />
         <Projects t={t} />
-        <SuccessSection t={t} lang={lang} />
         <Team t={t} />
         <Contact t={t} />
       </main>

@@ -59,7 +59,7 @@ export const TRANSLATIONS: TranslationStructure = {
 
   // Projects
   projects_eyebrow: { sv: 'Utvalda Case', en: 'Selected Work' },
-  projects_title: { sv: 'Resultat vi är stolta över', en: 'Results We Are Proud Of' },
+  projects_title: { sv: 'Våra Senaste Projekt', en: 'Our Latest Projects' },
   project_visit: { sv: 'Besök Webbplats', en: 'Visit Website' },
   
   // Categories (Projects)
@@ -69,7 +69,7 @@ export const TRANSLATIONS: TranslationStructure = {
   cat_lifestyle: { sv: 'Nordisk Livsstil', en: 'Nordic Lifestyle' },
   cat_marketplace: { sv: 'Grön Marknadsplats', en: 'Green Marketplace' },
 
-  // Stats/Trust
+  // Stats/Trust - Kept in structure but unused in UI
   stats_success: { sv: 'Vi har framgångsrika...', en: 'We have successful...' },
   stats_clients: { sv: 'Nöjda Kunder', en: 'Happy Clients' },
   stats_projects: { sv: 'Genomförda Projekt', en: 'Completed Projects' },
@@ -184,7 +184,7 @@ export const PROJECTS: Project[] = [
 export const TEAM: TeamMember[] = [
   {
     id: 'sara',
-    name: 'Sara',
+    name: 'Sara Paouls',
     roleKey: 'role_client_relations',
     color: 'from-pink-500 to-rose-500'
   },
