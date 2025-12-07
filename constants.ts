@@ -205,7 +205,7 @@ export const TEAM: TeamMember[] = [
   },
   {
     id: 'yasin',
-    name: 'Yasin Lenceria',
+    name: 'Yasin Lenc',
     roleKey: 'role_developer',
     color: 'from-indigo-400 to-purple-500'
   },

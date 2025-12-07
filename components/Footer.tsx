@@ -6,7 +6,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ t }) => {
   return (
-    <footer className="border-t border-white/5 bg-[#020806] py-12">
+    <footer className="relative z-10 border-t border-white/5 bg-[#020806] py-12">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-xl font-display font-bold text-slate-500">
           EcoWeb<span className="text-slate-600">Agency</span>

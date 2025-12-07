@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Leaf, Zap, Globe, Wind } from 'lucide-react';
+import { ArrowRight, TrendingUp, Layout, Code2, Globe } from 'lucide-react';
 
 interface HeroProps {
   t: (key: string) => string;
@@ -9,35 +9,8 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ t }) => {
   return (
     <section className="relative min-h-[92vh] flex items-center pt-32 pb-20 px-6 overflow-hidden">
-      {/* Background Ambience - More organic */}
-      <div 
-        className="absolute inset-0 z-0 opacity-[0.04] pointer-events-none mix-blend-overlay" 
-        style={{ 
-          backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)', 
-          backgroundSize: '40px 40px' 
-        }} 
-      />
+      {/* Background is now handled globally in App.tsx */}
       
-      {/* Moving Organic Blobs */}
-      <motion.div 
-        animate={{ 
-          scale: [1, 1.1, 1], 
-          opacity: [0.3, 0.5, 0.3],
-          x: [0, 20, 0]
-        }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-[-10%] right-[-5%] w-[700px] h-[700px] bg-emerald-600/20 rounded-full blur-[120px] pointer-events-none" 
-      />
-      <motion.div 
-        animate={{ 
-          scale: [1, 1.2, 1], 
-          opacity: [0.2, 0.4, 0.2],
-          x: [0, -30, 0]
-        }}
-        transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-        className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-teal-800/20 rounded-full blur-[100px] pointer-events-none" 
-      />
-
       <div className="container mx-auto max-w-7xl relative z-10 grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
         
         {/* Left Content */}
@@ -114,7 +87,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] border border-dashed border-white/5 rounded-full"
           />
 
-          {/* Floating Card 1: Carbon Footprint */}
+          {/* Floating Card 1: Growth / Organic Traffic */}
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: [0, -10, 0] }}
@@ -126,15 +99,15 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
           >
             <div className="flex items-center gap-3 mb-3">
               <div className="p-2 bg-emerald-500/20 rounded-full text-emerald-400">
-                <Leaf size={18} />
+                <TrendingUp size={18} />
               </div>
-              <span className="text-xs font-bold text-slate-300 uppercase tracking-wider">Eco Code</span>
+              <span className="text-xs font-bold text-slate-300 uppercase tracking-wider">Growth</span>
             </div>
-            <div className="text-xl font-display font-bold text-white">-40% CO2</div>
-            <div className="text-[10px] text-slate-500 mt-1">Reduced digital footprint</div>
+            <div className="text-3xl font-display font-bold text-white">+300%</div>
+            <div className="text-[11px] text-slate-400 mt-1 uppercase tracking-wide">Organic Traffic</div>
           </motion.div>
 
-          {/* Floating Card 2: Performance (Speed = Green) */}
+          {/* Floating Card 2: Design / UX Score */}
           <motion.div 
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0, y: [0, 15, 0] }}
@@ -146,11 +119,15 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
           >
              <div className="flex items-center gap-3 mb-3">
               <div className="p-2 bg-teal-500/20 rounded-full text-teal-400">
-                <Zap size={18} />
+                <Layout size={18} />
               </div>
-              <span className="text-xs font-bold text-slate-300 uppercase tracking-wider">Performance</span>
+              <span className="text-xs font-bold text-slate-300 uppercase tracking-wider">Design</span>
             </div>
-            <div className="h-2 w-full bg-white/5 rounded-full overflow-hidden mb-2">
+            <div className="flex items-end justify-between mb-2">
+               <div className="text-xl font-display font-bold text-white">UX Score</div>
+               <div className="text-xl font-bold text-emerald-400">98<span className="text-sm text-slate-500">/100</span></div>
+            </div>
+            <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
               <motion.div 
                 initial={{ width: 0 }}
                 animate={{ width: "98%" }}
@@ -158,13 +135,9 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
                 className="h-full bg-gradient-to-r from-teal-400 to-emerald-400" 
               />
             </div>
-            <div className="flex justify-between text-[10px] text-slate-400">
-              <span>Google PageSpeed</span>
-              <span className="text-white font-bold">99/100</span>
-            </div>
           </motion.div>
 
-          {/* Floating Card 3: Nordic Identity */}
+          {/* Floating Card 3: Technical SEO */}
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: [0, -8, 0] }}
@@ -172,17 +145,21 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
               opacity: { duration: 0.8, delay: 1 },
               y: { repeat: Infinity, duration: 7, ease: "easeInOut", delay: 0.5 }
             }}
-            className="absolute bottom-[15%] right-[20%] p-5 bg-[#0d1f1a]/60 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl w-48 hover:border-emerald-500/30 transition-colors"
+            className="absolute bottom-[15%] right-[20%] p-5 bg-[#0d1f1a]/60 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl w-56 hover:border-emerald-500/30 transition-colors"
           >
              <div className="flex items-center gap-3 mb-3">
               <div className="p-2 bg-blue-500/20 rounded-full text-blue-400">
-                <Wind size={18} />
+                <Code2 size={18} />
               </div>
-              <span className="text-xs font-bold text-slate-300 uppercase tracking-wider">Nordic UX</span>
+              <span className="text-xs font-bold text-slate-300 uppercase tracking-wider">Technical SEO</span>
             </div>
-            <div className="text-sm text-slate-300 font-medium italic">
-              "Minimalism meets function."
+            <div className="text-sm text-slate-300 font-medium">
+              Structure & Performance
             </div>
+             <div className="flex items-center gap-2 mt-2 text-xs text-emerald-400 font-bold uppercase">
+               <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
+               Optimized
+             </div>
           </motion.div>
 
         </div>
