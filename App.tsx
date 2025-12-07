@@ -4,7 +4,6 @@ import { Language } from './types';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
-import Projects from './components/Projects';
 import Team from './components/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -52,7 +51,6 @@ const App: React.FC = () => {
       <main className="relative z-10 flex flex-col gap-24 md:gap-32 pb-24">
         <Hero t={t} />
         <Services t={t} />
-        <Projects t={t} />
         <Team t={t} />
         <Contact t={t} />
       </main>

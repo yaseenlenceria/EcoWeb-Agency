@@ -111,7 +111,6 @@ export const SERVICES: ServiceItem[] = [
 
 export const NAV_ITEMS: NavItem[] = [
   { labelKey: 'nav_services', href: '#services' },
-  { labelKey: 'nav_work', href: '#work' },
   { labelKey: 'nav_about', href: '#team' },
   { labelKey: 'nav_contact', href: '#contact' },
 ];
@@ -184,7 +183,7 @@ export const PROJECTS: Project[] = [
 export const TEAM: TeamMember[] = [
   {
     id: 'sara',
-    name: 'Sara Paouls',
+    name: 'Sara',
     roleKey: 'role_client_relations',
     color: 'from-pink-500 to-rose-500'
   },
