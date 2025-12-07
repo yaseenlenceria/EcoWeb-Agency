@@ -13,85 +13,94 @@ import { ServiceItem, TranslationStructure, Testimonial, NavItem, Project, TeamM
 
 export const TRANSLATIONS: TranslationStructure = {
   // Navigation
-  nav_services: { sv: 'Tjänster', en: 'Services' },
-  nav_about: { sv: 'Om Oss', en: 'About' },
-  nav_work: { sv: 'Case', en: 'Work' },
-  nav_contact: { sv: 'Kontakt', en: 'Contact' },
+  nav_services: { sv: 'Vad vi gör', en: 'What We Do' },
+  nav_about: { sv: 'Teamet', en: 'The Team' },
+  nav_work: { sv: 'Utvalda Case', en: 'Selected Work' },
+  nav_contact: { sv: 'Prata med oss', en: 'Let\'s Talk' },
   
   // Hero
-  hero_title_1: { sv: 'Vi skapar din', en: 'We create your' },
-  hero_title_2: { sv: 'digitala framtid', en: 'digital future' },
-  hero_subtitle: { sv: 'EcoWebAgency kombinerar teknisk expertis med nordisk design för att få ditt företag att växa hållbart.', en: 'EcoWebAgency combines technical expertise with Nordic design to help your business grow sustainably.' },
-  hero_cta: { sv: 'Starta ditt projekt', en: 'Start your project' },
-  hero_secondary: { sv: 'Se våra tjänster', en: 'View our services' },
+  hero_title_1: { sv: 'Digital växtkraft för', en: 'Digital growth for' },
+  hero_title_2: { sv: 'hållbara företag', en: 'sustainable brands' },
+  hero_subtitle: { 
+    sv: 'Vi är en svensk webbyrå som hjälper företag att växa utan att kompromissa med framtiden. Hållbar kod, strategisk design och äkta engagemang.', 
+    en: 'We are a Swedish agency helping businesses grow without compromising the future. Sustainable code, strategic design, and genuine commitment.' 
+  },
+  hero_cta: { sv: 'Starta er resa', en: 'Start your journey' },
+  hero_secondary: { sv: 'Utforska våra tjänster', en: 'Explore services' },
+  hero_tag: { sv: 'Baserade i Stockholm', en: 'Stockholm Based' },
 
   // Services
-  services_eyebrow: { sv: 'Vår Expertis', en: 'Our Expertise' },
-  services_title: { sv: 'Helhetslösningar för webben', en: 'Comprehensive Web Solutions' },
+  services_eyebrow: { sv: 'Vårt Hantverk', en: 'Our Craft' },
+  services_title: { sv: 'Vi bygger webben bättre', en: 'Building a Better Web' },
   
   // Service Items Titles & Descs
-  srv_seo_title: { sv: 'Sökmotoroptimering (SEO)', en: 'SEO' },
-  srv_seo_desc: { sv: 'Klättra i sökresultaten och driv organisk trafik.', en: 'Climb search results and drive organic traffic.' },
+  srv_seo_title: { sv: 'SEO & Organisk Tillväxt', en: 'SEO & Organic Growth' },
+  srv_seo_desc: { sv: 'Vi hjälper er att synas där det spelar roll, helt organiskt.', en: 'We help you get seen where it matters, completely organically.' },
   
-  srv_local_title: { sv: 'Lokal SEO & Automation', en: 'Local SEO Automation' },
-  srv_local_desc: { sv: 'Dominera din lokala marknad automatiskt.', en: 'Dominate your local market automatically.' },
+  srv_local_title: { sv: 'Lokal Närvaro', en: 'Local Presence' },
+  srv_local_desc: { sv: 'Bli det självklara valet i er stad genom smart automation.', en: 'Become the obvious choice in your city through smart automation.' },
   
-  srv_redesign_title: { sv: 'Omdesign av Webbplats', en: 'Website Redesign' },
-  srv_redesign_desc: { sv: 'Modernisera din närvaro utan att tappa rankning.', en: 'Modernize your presence without losing rank.' },
+  srv_redesign_title: { sv: 'Hållbar Webbdesign', en: 'Sustainable Web Design' },
+  srv_redesign_desc: { sv: 'Vi moderniserar er sajt med lättviktskod för lägre klimatavtryck.', en: 'Modernizing your site with lightweight code for a lower carbon footprint.' },
   
-  srv_design_title: { sv: 'Webbdesign', en: 'Website Design' },
-  srv_design_desc: { sv: 'Skräddarsydd, vacker och funktionell design.', en: 'Tailored, beautiful, and functional design.' },
+  srv_design_title: { sv: 'UX & Visuell Identitet', en: 'UX & Visual Identity' },
+  srv_design_desc: { sv: 'Design som känns rätt i magen och guidar besökaren rätt.', en: 'Design that feels right and guides the visitor intuitively.' },
   
-  srv_content_title: { sv: 'Content Marketing', en: 'Content Marketing' },
-  srv_content_desc: { sv: 'Strategiskt innehåll som engagerar och konverterar.', en: 'Strategic content that engages and converts.' },
+  srv_content_title: { sv: 'Storytelling', en: 'Storytelling' },
+  srv_content_desc: { sv: 'Vi berättar er historia så att kunderna lyssnar.', en: 'We tell your story so customers actually listen.' },
   
-  srv_ppc_title: { sv: 'PPC & Annonsering', en: 'PPC' },
-  srv_ppc_desc: { sv: 'Maximal ROI på Google och sociala medier.', en: 'Maximum ROI on Google and social media.' },
+  srv_ppc_title: { sv: 'Google Ads & PPC', en: 'Google Ads & PPC' },
+  srv_ppc_desc: { sv: 'Effektiv annonsering som inte slösar på budgeten.', en: 'Effective advertising that doesn\'t waste budget.' },
   
-  srv_campaign_title: { sv: 'Kampanjhantering', en: 'Campaign Management' },
-  srv_campaign_desc: { sv: 'Datadrivna kampanjer från start till mål.', en: 'Data-driven campaigns from start to finish.' },
+  srv_campaign_title: { sv: 'Kampanjstrategi', en: 'Campaign Strategy' },
+  srv_campaign_desc: { sv: 'Från idé till lansering, vi håller i trådarna.', en: 'From idea to launch, we handle the threads.' },
   
-  srv_social_title: { sv: 'Sociala Medier', en: 'Social Media Marketing' },
-  srv_social_desc: { sv: 'Bygg ditt varumärke där dina kunder finns.', en: 'Build your brand where your customers are.' },
+  srv_social_title: { sv: 'Sociala Medier', en: 'Social Media' },
+  srv_social_desc: { sv: 'Skapa äkta relationer med er målgrupp.', en: 'Create genuine relationships with your audience.' },
   
-  srv_tech_title: { sv: 'Teknisk SEO', en: 'Technical SEO' },
-  srv_tech_desc: { sv: 'Optimera webbplatsens struktur och prestanda.', en: 'Optimize site structure and performance.' },
+  srv_tech_title: { sv: 'Teknisk Optimering', en: 'Technical Optimization' },
+  srv_tech_desc: { sv: 'Snabbare laddtider, bättre ranking, nöjdare användare.', en: 'Faster load times, better ranking, happier users.' },
 
   // Projects
-  projects_eyebrow: { sv: 'Utvalda Case', en: 'Selected Work' },
-  projects_title: { sv: 'Våra Senaste Projekt', en: 'Our Latest Projects' },
-  project_visit: { sv: 'Besök Webbplats', en: 'Visit Website' },
+  projects_eyebrow: { sv: 'Utvalda Projekt', en: 'Selected Work' },
+  projects_title: { sv: 'Företag vi hjälpt växa', en: 'Companies We\'ve Helped Grow' },
+  project_visit: { sv: 'Se resultatet', en: 'View Result' },
   
   // Categories (Projects)
-  cat_ecommerce: { sv: 'E-handel & Sömn', en: 'E-commerce & Sleep' },
+  cat_ecommerce: { sv: 'E-handel & Hälsa', en: 'E-commerce & Health' },
   cat_retail: { sv: 'Hållbar Detaljhandel', en: 'Sustainable Retail' },
   cat_eco: { sv: 'Miljömedvetna Val', en: 'Eco-conscious Choices' },
   cat_lifestyle: { sv: 'Nordisk Livsstil', en: 'Nordic Lifestyle' },
   cat_marketplace: { sv: 'Grön Marknadsplats', en: 'Green Marketplace' },
 
-  // Stats/Trust - Kept in structure but unused in UI
-  stats_success: { sv: 'Vi har framgångsrika...', en: 'We have successful...' },
-  stats_clients: { sv: 'Nöjda Kunder', en: 'Happy Clients' },
-  stats_projects: { sv: 'Genomförda Projekt', en: 'Completed Projects' },
-  
+  // Stats / Success (SuccessSection)
+  stats_success: { sv: 'Resultat som talar', en: 'Results that speak' },
+  stats_clients: { sv: 'Nöjda kunder', en: 'Happy Clients' },
+  stats_projects: { sv: 'Projekt Levererade', en: 'Projects Delivered' },
+
+  // Testimonials Quotes
+  quote_mattress: { sv: 'Vi såg en omedelbar ökning i organisk trafik och försäljning.', en: 'We saw an immediate increase in organic traffic and sales.' },
+  quote_daylesford: { sv: 'EcoWebAgency hjälpte oss att spegla våra hållbarhetsvärderingar digitalt.', en: 'EcoWebAgency helped us reflect our sustainability values digitally.' },
+  quote_regn: { sv: 'En partner som verkligen förstår modern e-handel och branding.', en: 'A partner that truly understands modern e-commerce and branding.' },
+
   // Team
-  team_eyebrow: { sv: 'Vårt Team', en: 'Our Team' },
-  team_title: { sv: 'Människorna bakom koden', en: 'The People Behind The Code' },
+  team_eyebrow: { sv: 'Människorna', en: 'The Humans' },
+  team_title: { sv: 'Vi som gör jobbet', en: 'The People Behind It' },
   
   // Roles
-  role_client_relations: { sv: 'Kundansvarig & Projektledning', en: 'Client Relations & PM' },
-  role_developer: { sv: 'Fullstack Utvecklare', en: 'Full Stack Developer' },
-  role_lead_dev: { sv: 'Lead Architect & Kod', en: 'Lead Architect & Deep Dive' },
-  role_social: { sv: 'Social Media Manager', en: 'Social Media Manager' },
-  role_design: { sv: 'Webbdesign & UX', en: 'Web Design & UX' },
+  role_client_relations: { sv: 'Projektledare & Kontakt', en: 'Client Relations & PM' },
+  role_developer: { sv: 'Utvecklare', en: 'Developer' },
+  role_lead_dev: { sv: 'Lead Developer', en: 'Lead Developer' },
+  role_social: { sv: 'Social Media Kreatör', en: 'Social Media Creator' },
+  role_design: { sv: 'Webbdesigner', en: 'Web Designer' },
 
   // Contact
-  contact_title: { sv: 'Redo att växa?', en: 'Ready to grow?' },
-  contact_desc: { sv: 'Låt oss diskutera hur vi kan hjälpa dig att nå dina mål. Enkel, snygg hemsida eller avancerad marknadsföring.', en: 'Let’s discuss how we can help you reach your goals. Simple, good-looking websites or advanced marketing.' },
-  contact_name: { sv: 'Namn', en: 'Name' },
-  contact_email: { sv: 'E-post', en: 'Email' },
-  contact_message: { sv: 'Meddelande', en: 'Message' },
-  contact_send: { sv: 'Skicka förfrågan', en: 'Send Inquiry' },
+  contact_title: { sv: 'Ska vi skapa något ihop?', en: 'Shall we create something?' },
+  contact_desc: { sv: 'Oavsett om ni behöver en enkel, snygg hemsida eller en komplex marknadsstrategi så finns vi här. Låt oss ta en kaffe (digitalt eller irl).', en: 'Whether you need a simple, beautiful website or a complex strategy, we are here. Let\'s have a coffee (digital or IRL).' },
+  contact_name: { sv: 'Ditt namn', en: 'Your Name' },
+  contact_email: { sv: 'Din e-post', en: 'Your Email' },
+  contact_message: { sv: 'Berätta om ert projekt...', en: 'Tell us about your project...' },
+  contact_send: { sv: 'Skicka meddelande', en: 'Send Message' },
 
   // Footer
   footer_rights: { sv: 'Alla rättigheter förbehållna.', en: 'All rights reserved.' }
@@ -111,6 +120,7 @@ export const SERVICES: ServiceItem[] = [
 
 export const NAV_ITEMS: NavItem[] = [
   { labelKey: 'nav_services', href: '#services' },
+  { labelKey: 'nav_work', href: '#work' },
   { labelKey: 'nav_about', href: '#team' },
   { labelKey: 'nav_contact', href: '#contact' },
 ];
@@ -118,27 +128,27 @@ export const NAV_ITEMS: NavItem[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
-    name: "Erik Johansson",
-    role: "CEO",
-    company: "Nordic Retail AB",
-    quoteKey: "EcoWebAgency transformerade vår digitala närvaro helt. Vår lokala SEO har ökat trafiken med 300%.",
-    image: "https://picsum.photos/100/100?random=1"
+    name: 'James O.',
+    role: 'CEO',
+    company: 'The Mattress Store',
+    quoteKey: 'quote_mattress',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces'
   },
   {
     id: 2,
-    name: "Anna Berg",
-    role: "Marketing Director",
-    company: "GreenTech Solutions",
-    quoteKey: "Otroligt snygg design och teknisk kompetens. De förstår verkligen både kod och estetik.",
-    image: "https://picsum.photos/100/100?random=2"
+    name: 'Sarah M.',
+    role: 'Marketing Dir',
+    company: 'Daylesford',
+    quoteKey: 'quote_daylesford',
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=faces'
   },
   {
     id: 3,
-    name: "Lars Nilsson",
-    role: "Founder",
-    company: "StartUp Sthlm",
-    quoteKey: "Enkel process, fantastiskt resultat. Vår nya hemsida är snabb, modern och konverterar.",
-    image: "https://picsum.photos/100/100?random=3"
+    name: 'Anders K.',
+    role: 'Founder',
+    company: 'REGN',
+    quoteKey: 'quote_regn',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=faces'
   }
 ];
 
@@ -185,36 +195,36 @@ export const TEAM: TeamMember[] = [
     id: 'sara',
     name: 'Sara',
     roleKey: 'role_client_relations',
-    color: 'from-pink-500 to-rose-500'
+    color: 'from-emerald-400 to-teal-600'
   },
   {
     id: 'ali',
     name: 'Ali',
     roleKey: 'role_lead_dev',
-    color: 'from-blue-500 to-indigo-500'
+    color: 'from-blue-500 to-cyan-400'
   },
   {
     id: 'yasin',
-    name: 'Yasin Lenceria',
+    name: 'Yasin',
     roleKey: 'role_developer',
-    color: 'from-purple-500 to-violet-500'
+    color: 'from-indigo-400 to-purple-500'
   },
   {
     id: 'lena',
     name: 'Lena',
     roleKey: 'role_developer',
-    color: 'from-teal-500 to-emerald-500'
+    color: 'from-teal-400 to-emerald-500'
   },
   {
     id: 'john',
     name: 'John',
     roleKey: 'role_design',
-    color: 'from-orange-500 to-amber-500'
+    color: 'from-orange-400 to-amber-500'
   },
   {
     id: 'aisha',
     name: 'Aisha',
     roleKey: 'role_social',
-    color: 'from-fuchsia-500 to-pink-500'
+    color: 'from-rose-400 to-pink-500'
   }
 ];
